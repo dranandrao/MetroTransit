@@ -31,7 +31,7 @@ This part explains the environment required to host application.
 
 ## Running
 
-Extract the both eclipse and gson zip files.Add the GSON.jar into the /WebContent/WEN-INF/lib folder if the GSON.jar file is not available. Run the application and select the server to be hosted.
+Extract the both eclipse and gson zip files.Add the GSON.jar into the /WebContent/WEN-INF/lib folder if the GSON.jar file is not available. Run the application and select the server to be hosted.Welcome page is displayed in eclipse browser.Feed in the Route, from and direction into the page, submit the form.If any error or server down, error messages are displayed in the browser.If no errors the the arrival time is displayed based on scheduled time/real time departures.
 
 
 
