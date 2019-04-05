@@ -34,22 +34,22 @@
 		onsubmit=" return formValidation()">
 		<table>
 			<tr>
-				<td><label>Route:</label></td>
-				<td><input type="text" name="route" required></td>
+				<td><label>Route</label></td>
+				<td><input type="text" name="route" placeholder="route" required></td>
 				<td><p id="routeError" /></td>
 			</tr>
 			<tr>
-				<td><label>From:</label></td>
-				<td><input type="text" name="destination" required /></td>
+				<td><label>From</label></td>
+				<td><input type="text" name="destination" placeholder="Destination" required /></td>
 				<td><p id="errorDestination" /></td>
 			</tr>
 			<tr>
-				<td><label>Direction:</label></td>
-				<td><input type="text" name="direction" required /></td>
+				<td><label>Direction</label></td>
+				<td><input type="text" name="direction" placeholder="south, north, east or west" required /></td>
 				<td><p id="errorDirection" /></td>
 			</tr>
 			<tr>
-				<td><input type="submit" value="Get Waiting Time"></td>
+				<td><input type="submit" value="Arrival Time"></td>
 			</tr>
 		</table>
 	</form>
