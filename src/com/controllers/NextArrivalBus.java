@@ -97,7 +97,7 @@ public class NextArrivalBus extends HttpServlet {
 				}
 
 			} else {
-				request.setAttribute("errorMsg", "Route not valid");
+				request.setAttribute("errorMsg", "Route direction not possible");
 				request.getRequestDispatcher("GetWaitingTime.jsp").forward(request, response);
 			}
 
@@ -121,7 +121,7 @@ public class NextArrivalBus extends HttpServlet {
 				}
 
 			} else {
-				request.setAttribute("errorMsg", "Direction not valid");
+				request.setAttribute("errorMsg", "Route or From or Direction is empty");
 				request.getRequestDispatcher("GetWaitingTime.jsp").forward(request, response);
 			}
 
@@ -148,7 +148,7 @@ public class NextArrivalBus extends HttpServlet {
 
 							long differenceTime = busArrivalDate.getTime() - currentDate.getTime();
 							long differenceInMinutes = TimeUnit.MILLISECONDS.toMinutes(differenceTime);
-							stringBuilder.append("Bus Arrives in " + differenceInMinutes + " mins"+ "/n" +"* Based on last updated time.");
+							stringBuilder.append("Bus Arrives in " + differenceInMinutes + " mins");
 							break;
 						}
 					}
@@ -159,7 +159,7 @@ public class NextArrivalBus extends HttpServlet {
 					request.getRequestDispatcher("GetWaitingTime.jsp").forward(request, response);
 				}
 			} else {
-				request.setAttribute("errorMsg", "Stop code not valid");
+				request.setAttribute("errorMsg", "No stop code");
 				request.getRequestDispatcher("GetWaitingTime.jsp").forward(request, response);
 			}
 
